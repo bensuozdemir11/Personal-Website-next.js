@@ -27,7 +27,7 @@ export default function Home() {
 
           <div className="hero-image">
             <img
-              src="/bensu.jpg"
+              src="/bensu.jpeg"
               alt="Bensu Ozdemir"
             />
             <p>PORTRAIT / 2026</p>
