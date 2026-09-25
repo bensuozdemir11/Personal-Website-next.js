@@ -1,27 +1,13 @@
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import ProjectCard from "@/components/ProjectCard";
+
 export default function Home() {
   return (
     <main>
-      <nav className="navbar">
-        <div className="logo">◎ BENSU ÖZDEMİR</div>
+      <Navbar />
 
-        <div className="nav-links">
-          <a href="#home">HOME</a>
-          <a href="#about">ABOUT</a>
-          <a href="#work">WORK</a>
-          <a href="#experience">EXPERIENCE</a>
-          <a href="#references">REFERENCES</a>
-          <a href="#cv">CV</a>
-          <a href="#contact">CONTACT</a>
-        </div>
-
-        <div className="nav-note">
-          BUILDING
-          <br />
-          WHAT&apos;S NEXT ✦
-        </div>
-      </nav>
-
-      <section id="home" className="hero">
+      <section className="hero">
         <div className="hero-top">
           <span>// COMPUTER SCIENCE · SOFTWARE</span>
           <span>2026 / LONDON, UK</span>
@@ -40,15 +26,20 @@ export default function Home() {
               smarter and more connected.
             </p>
 
-            <a href="#work" className="hero-button">
+            <a href="/work" className="hero-button">
               EXPLORE MY WORK →
             </a>
           </div>
 
           <div className="hero-image">
             <div className="image-placeholder">
-              <span>YOUR<br />PHOTO</span>
+              <span>
+                YOUR
+                <br />
+                PHOTO
+              </span>
             </div>
+
             <p>PORTRAIT / 2026</p>
           </div>
         </div>
@@ -60,37 +51,37 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="work" className="work-preview">
+      <section className="work-preview">
         <div className="section-heading">
           <span>01</span>
           <h2>SELECTED WORK</h2>
         </div>
 
         <div className="project-grid">
-          <article className="project-card">
-            <span>01 / MOBILE APPLICATION</span>
-            <h3>NAVIUNI</h3>
-            <p>React Native · Expo · TypeScript</p>
-            <a href="#">VIEW PROJECT →</a>
-          </article>
+          <ProjectCard
+            number="01"
+            category="MOBILE APPLICATION"
+            title="NAVIUNI"
+            description="React Native · Expo · TypeScript"
+          />
 
-          <article className="project-card">
-            <span>02 / WEB PLATFORM</span>
-            <h3>GREENURBS</h3>
-            <p>Digital Technology · ESG · Web Platform</p>
-            <a href="#">VIEW PROJECT →</a>
-          </article>
+          <ProjectCard
+            number="02"
+            category="WEB PLATFORM"
+            title="GREENURBS"
+            description="Digital Technology · ESG · Web Platform"
+          />
 
-          <article className="project-card">
-            <span>03 / DIGITAL SERVICES</span>
-            <h3>BENORA</h3>
-            <p>Technology · Digital Products · Creative Services</p>
-            <a href="#">VIEW PROJECT →</a>
-          </article>
+          <ProjectCard
+            number="03"
+            category="DIGITAL SERVICES"
+            title="BENORA"
+            description="Technology · Digital Products · Creative Services"
+          />
         </div>
       </section>
 
-      <section id="about" className="about-preview">
+      <section className="about-preview">
         <span>02 / ABOUT</span>
 
         <div>
@@ -107,21 +98,14 @@ export default function Home() {
             University, interested in software engineering, digital products
             and emerging technology.
           </p>
+
+          <a href="/about" className="hero-button">
+            MORE ABOUT ME →
+          </a>
         </div>
       </section>
 
-      <footer id="contact">
-        <div>
-          <span>LET&apos;S BUILD SOMETHING.</span>
-          <h2>BENSU ÖZDEMİR</h2>
-        </div>
-
-        <div className="footer-links">
-          <a href="#">LINKEDIN ↗</a>
-          <a href="#">GITHUB ↗</a>
-          <a href="mailto:hello@bensuozdemir.com">EMAIL ↗</a>
-        </div>
-      </footer>
+      <Footer />
     </main>
   );
 }
