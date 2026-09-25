@@ -365,8 +365,8 @@ footer h2 {
     font-size: 12px;
   }
 
-  .hero-image {
-    width: 220px;
+ .hero-image {
+  width: min(220px, 100%);
   }
 
   .hero-bottom {
