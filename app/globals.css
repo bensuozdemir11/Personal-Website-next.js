@@ -75,7 +75,7 @@ main {
 
 .hero-title h1 {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(90px, 12vw, 185px);
+  font-size: clamp(100px, 13vw, 200px);
   font-weight: 500;
   line-height: 0.78;
   letter-spacing: -0.075em;
