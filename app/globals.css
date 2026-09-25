@@ -357,3 +357,34 @@ footer h2 {
     padding: 80px 20px 30px;
   }
 }
+main {
+  overflow: hidden;
+}
+
+.logo {
+  font-family: 'DM Mono', monospace;
+}
+
+.logo:hover {
+  color: var(--accent);
+}
+
+.hero-button {
+  cursor: pointer;
+}
+
+.project-card {
+  transition: background 0.3s ease;
+}
+
+.project-card:hover {
+  background: #e5dfd2;
+}
+
+.project-card h3 {
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover h3 {
+  transform: translateX(8px);
+}
