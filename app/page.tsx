@@ -62,12 +62,12 @@ export default function Home() {
             <a href="#">VIEW PROJECT →</a>
           </article>
 
-          <article className="project-card">
-            <span>03 / DIGITAL SERVICES</span>
-            <h3>BENORA</h3>
-            <p>Technology · Digital Products · Creative Services</p>
-            <a href="#">VIEW PROJECT →</a>
-          </article>
+         <article className="project-card">
+  <span>03 / DIGITAL PROJECT</span>
+  <h3>RIGHT AFTER</h3>
+  <p>Digital Product · Design · Development</p>
+  <a href="/work/right-after">VIEW PROJECT →</a>
+</article>
         </div>
       </section>
 
