@@ -52,7 +52,7 @@ export default function Home() {
             <span>01 / MOBILE APPLICATION</span>
             <h3>NAVIUNI</h3>
             <p>React Native · Expo · TypeScript</p>
-            <a href="#">VIEW PROJECT →</a>
+            <a href="/work/naviuni">VIEW PROJECT →</a>
           </article>
 
           <article className="project-card">
