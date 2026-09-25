@@ -388,3 +388,16 @@ main {
 .project-card:hover h3 {
   transform: translateX(8px);
 }
+.hero-image img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  display: block;
+  filter: grayscale(100%);
+  border: 1px solid var(--border);
+}
+
+.hero-image img:hover {
+  filter: grayscale(0%);
+  transition: filter 0.4s ease;
+}
