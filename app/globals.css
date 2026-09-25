@@ -510,3 +510,107 @@ footer h2 {
     flex-direction: column;
   }
 }
+/* =========================
+   RIGHT AFTER PROJECT PAGE
+========================= */
+
+.right-after-page {
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.right-after-header {
+  padding: 25px 4vw;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+}
+
+.right-after-header a,
+.right-after-footer a {
+  transition: color 0.2s ease;
+}
+
+.right-after-header a:hover,
+.right-after-footer a:hover {
+  color: var(--accent);
+}
+
+.right-after-header span {
+  color: var(--accent);
+}
+
+.right-after-title {
+  padding: 100px 4vw 80px;
+  border-bottom: 1px solid var(--border);
+}
+
+.right-after-title p {
+  color: var(--accent);
+  font-size: 10px;
+  margin-bottom: 25px;
+}
+
+.right-after-title h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(75px, 13vw, 200px);
+  font-weight: 400;
+  line-height: 0.8;
+  letter-spacing: -0.07em;
+}
+
+.right-after-title span {
+  display: block;
+  margin-top: 35px;
+  font-size: 12px;
+}
+
+.right-after-pages {
+  width: 100%;
+  border-bottom: 1px solid var(--border);
+}
+
+.right-after-pages img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid var(--border);
+}
+
+.right-after-pages img:last-child {
+  border-bottom: none;
+}
+
+.right-after-footer {
+  padding: 40px 4vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+.right-after-footer span {
+  color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .right-after-header {
+    padding: 20px;
+  }
+
+  .right-after-title {
+    padding: 75px 20px 60px;
+  }
+
+  .right-after-title h1 {
+    font-size: 68px;
+  }
+
+  .right-after-footer {
+    padding: 30px 20px;
+    gap: 30px;
+    flex-direction: column;
+  }
+}
