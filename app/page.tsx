@@ -28,18 +28,13 @@ export default function Home() {
               EXPLORE MY WORK →
             </a>
           </div>
-
-          <div className="hero-photo">
-            <Image
-              src="/bensu.jpg"
-              alt="Bensu Özdemir"
-              width={600}
-              height={800}
-              priority
-            />
-            <span>PORTRAIT / 2026</span>
-          </div>
-        </div>
+<div className="hero-image">
+  <img
+    src="/bensu.jpg"
+    alt="Bensu Ozdemir"
+  />
+  <p>PORTRAIT / 2026</p>
+</div>
 
         <div className="hero-bottom">
           <span>SOFTWARE ENGINEERING</span>
