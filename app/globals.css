@@ -406,3 +406,107 @@ footer h2 {
     gap: 12px;
   }
 }
+/* =========================
+   NAVIUNI PROJECT PAGE
+========================= */
+
+.naviuni-page {
+  min-height: 100vh;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+.naviuni-header {
+  padding: 25px 4vw;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+}
+
+.naviuni-header a,
+.naviuni-footer a {
+  transition: color 0.2s ease;
+}
+
+.naviuni-header a:hover,
+.naviuni-footer a:hover {
+  color: var(--accent);
+}
+
+.naviuni-header span {
+  color: var(--accent);
+}
+
+.naviuni-title {
+  padding: 100px 4vw 80px;
+  border-bottom: 1px solid var(--border);
+}
+
+.naviuni-title p {
+  color: var(--accent);
+  font-size: 10px;
+  margin-bottom: 25px;
+}
+
+.naviuni-title h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(90px, 15vw, 220px);
+  font-weight: 400;
+  line-height: 0.8;
+  letter-spacing: -0.07em;
+}
+
+.naviuni-title span {
+  display: block;
+  margin-top: 35px;
+  font-size: 12px;
+}
+
+.naviuni-pages {
+  width: 100%;
+  border-bottom: 1px solid var(--border);
+}
+
+.naviuni-pages img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid var(--border);
+}
+
+.naviuni-pages img:last-child {
+  border-bottom: none;
+}
+
+.naviuni-footer {
+  padding: 40px 4vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+}
+
+.naviuni-footer span {
+  color: var(--accent);
+}
+
+@media (max-width: 600px) {
+  .naviuni-header {
+    padding: 20px;
+  }
+
+  .naviuni-title {
+    padding: 75px 20px 60px;
+  }
+
+  .naviuni-title h1 {
+    font-size: 80px;
+  }
+
+  .naviuni-footer {
+    padding: 30px 20px;
+    gap: 30px;
+    flex-direction: column;
+  }
+}
