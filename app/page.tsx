@@ -43,9 +43,9 @@ export default function Home() {
 
       <section id="work" className="work-preview">
         <div className="section-heading">
-          <span>01</span>
-          <h2>SELECTED WORK</h2>
-        </div>
+  <span>01</span>
+  <h2>PORTFOLIO</h2>
+</div>
 
         <div className="project-grid">
           <article className="project-card">
