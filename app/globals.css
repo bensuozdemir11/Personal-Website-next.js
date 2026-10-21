@@ -189,24 +189,12 @@ main {
   letter-spacing: -0.05em;
 }
 
-
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   border-top: 1px solid var(--border);
   border-left: 1px solid var(--border);
 }
-
-.project-card {
-  min-width: 0;
-}
-
-.project-card h3 {
-  font-size: clamp(26px, 2.5vw, 46px);
-  line-height: 1.1;
-  overflow-wrap: break-word;
-}
-
 
 .project-card {
   min-height: 380px;
@@ -656,99 +644,6 @@ footer h2 {
   }
 }
 
-
-@media (max-width: 1100px) {
-  .project-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-
-@media (max-width: 600px) {
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
-/* ABOUT ME */
-
-.about-preview {
-  grid-template-columns: 0.25fr 1fr;
-  gap: 5vw;
-  padding-top: 140px;
-  padding-bottom: 140px;
-}
-
-.about-content {
-  min-width: 0;
-}
-
-.about-headline {
-  font-size: clamp(48px, 6vw, 96px);
-  line-height: 1.05;
-  letter-spacing: -0.055em;
-}
-
-.about-headline em {
-  color: var(--accent);
-  font-weight: 400;
-}
-
-.about-text {
-  max-width: 760px;
-  margin-top: 65px;
-}
-
-.about-text p {
-  max-width: 760px;
-  margin-top: 0;
-  margin-bottom: 24px;
-  font-size: 14px;
-  line-height: 1.9;
-}
-
-.about-interests {
-  margin-top: 65px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border);
-  color: var(--accent);
-  font-size: 10px;
-  letter-spacing: 0.06em;
-  line-height: 1.8;
-}
-
-@media (max-width: 900px) {
-  .about-preview {
-    grid-template-columns: 1fr;
-    gap: 35px;
-  }
-
-  .about-text {
-    margin-top: 40px;
-  }
-}
-
-@media (max-width: 600px) {
-  .about-preview {
-    padding-top: 90px;
-    padding-bottom: 90px;
-  }
-
-  .about-headline {
-    font-size: clamp(42px, 10vw, 65px);
-  }
-
-  .about-text p {
-    font-size: 12px;
-  }
-
-  .about-interests {
-    margin-top: 40px;
-  }
-}
-
-
-
 /* New project pages: use the same editorial layout as NaviUni. */
 .portfolio-project-page { min-height: 100vh; background: var(--background); color: var(--foreground); }
 .portfolio-project-header { padding: 25px 4vw; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; gap: 20px; font-size: 10px; }
@@ -767,4 +662,98 @@ footer h2 {
   .portfolio-project-title { padding: 75px 20px 60px; }
   .portfolio-project-title h1 { font-size: clamp(48px, 12vw, 78px); }
   .portfolio-project-footer { padding: 30px 20px; flex-direction: column; align-items: flex-start; }
+}
+
+
+/* ABOUT ME: editorial portrait and personal story */
+.about-editorial {
+  padding: 105px 4vw 125px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.about-editorial-heading { margin-bottom: 55px; }
+
+.about-editorial-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr);
+  gap: clamp(28px, 4vw, 72px);
+  align-items: stretch;
+}
+
+.about-editorial-photo { min-width: 0; }
+.about-editorial-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: 54% center;
+  filter: grayscale(100%);
+  border: 1px solid var(--border);
+}
+.about-editorial-photo > span {
+  display: block;
+  margin-top: 13px;
+  font-size: 9px;
+  color: var(--accent);
+  letter-spacing: 0.03em;
+}
+.about-editorial-story {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 4px 0 0;
+}
+.about-editorial-eyebrow {
+  font-size: 10px;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+}
+.about-editorial-story h3 {
+  margin: 45px 0 32px;
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(42px, 4.7vw, 82px);
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  line-height: 1.04;
+}
+.about-editorial-story h3 em {
+  color: var(--accent);
+  font-weight: 400;
+}
+.about-editorial-copy {
+  max-width: 650px;
+}
+.about-editorial-copy p {
+  font-size: 12px;
+  line-height: 1.9;
+  margin-bottom: 17px;
+}
+.about-editorial-interests {
+  margin-top: auto;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+  color: var(--accent);
+  font-size: 10px;
+  line-height: 1.8;
+  letter-spacing: 0.02em;
+}
+@media (max-width: 1100px) {
+  .about-editorial-layout { grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 28px; }
+  .about-editorial-story h3 { margin-top: 25px; font-size: clamp(34px, 4vw, 54px); }
+  .about-editorial-copy p { font-size: 11px; line-height: 1.75; }
+}
+@media (max-width: 780px) {
+  .about-editorial { padding-top: 75px; padding-bottom: 85px; }
+  .about-editorial-layout { grid-template-columns: 1fr; gap: 36px; }
+  .about-editorial-photo img { aspect-ratio: 4 / 3; object-position: center 40%; }
+  .about-editorial-story h3 { margin: 28px 0 26px; font-size: clamp(43px, 8vw, 72px); }
+  .about-editorial-copy p { font-size: 12px; line-height: 1.85; }
+  .about-editorial-interests { margin-top: 20px; }
+}
+@media (max-width: 600px) {
+  .about-editorial { padding: 75px 20px 85px; }
+  .about-editorial-heading { margin-bottom: 38px; }
+  .about-editorial-photo img { aspect-ratio: 3 / 4; object-position: 54% center; }
+  .about-editorial-story h3 { font-size: clamp(39px, 10vw, 58px); }
 }
