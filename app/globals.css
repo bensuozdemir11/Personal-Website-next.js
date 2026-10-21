@@ -670,6 +670,85 @@ footer h2 {
 }
 
 
+/* ABOUT ME */
+
+.about-preview {
+  grid-template-columns: 0.25fr 1fr;
+  gap: 5vw;
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.about-content {
+  min-width: 0;
+}
+
+.about-headline {
+  font-size: clamp(48px, 6vw, 96px);
+  line-height: 1.05;
+  letter-spacing: -0.055em;
+}
+
+.about-headline em {
+  color: var(--accent);
+  font-weight: 400;
+}
+
+.about-text {
+  max-width: 760px;
+  margin-top: 65px;
+}
+
+.about-text p {
+  max-width: 760px;
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.about-interests {
+  margin-top: 65px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+  color: var(--accent);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .about-preview {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .about-text {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-preview {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .about-headline {
+    font-size: clamp(42px, 10vw, 65px);
+  }
+
+  .about-text p {
+    font-size: 12px;
+  }
+
+  .about-interests {
+    margin-top: 40px;
+  }
+}
+
+
+
 /* New project pages: use the same editorial layout as NaviUni. */
 .portfolio-project-page { min-height: 100vh; background: var(--background); color: var(--foreground); }
 .portfolio-project-header { padding: 25px 4vw; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; gap: 20px; font-size: 10px; }
