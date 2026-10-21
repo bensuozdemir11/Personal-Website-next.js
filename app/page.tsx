@@ -59,7 +59,7 @@ export default function Home() {
             <span>02 / WEB PLATFORM</span>
             <h3>GREENURBS</h3>
             <p>Digital Technology · ESG · Web Platform</p>
-            <a href="#">VIEW PROJECT →</a>
+            <a href="/work/greenurbs">VIEW PROJECT →</a>
           </article>
 
          <article className="project-card">
@@ -68,6 +68,12 @@ export default function Home() {
   <p>Digital Product · Design · Development</p>
   <a href="/work/right-after">VIEW PROJECT →</a>
 </article>
+          <article className="project-card">
+            <span>04 / IMMERSIVE VR EXPERIENCE</span>
+            <h3>NATUREVISTA VR</h3>
+            <p>Unity 6 · URP · OpenXR · Android VR</p>
+            <a href="/work/naturevista">VIEW PROJECT →</a>
+          </article>
         </div>
       </section>
 
