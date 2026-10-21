@@ -616,18 +616,33 @@ footer h2 {
 }
 
 
-/* Four projects in one row */
-@media (min-width: 1200px) {
-  .portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
+/* Responsive portfolio grid: four projects across on desktop. */
+.project-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
 
-  .portfolio-grid > * {
-    min-width: 0;
+.project-card {
+  min-width: 0;
+}
+
+.project-card h3 {
+  font-size: clamp(26px, 2.6vw, 48px);
+  line-height: 1.12;
+  letter-spacing: -0.055em;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 1100px) {
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
+@media (max-width: 600px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* New project pages: use the same editorial layout as NaviUni. */
 .portfolio-project-page { min-height: 100vh; background: var(--background); color: var(--foreground); }
