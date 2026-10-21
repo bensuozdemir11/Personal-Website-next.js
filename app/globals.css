@@ -189,12 +189,24 @@ main {
   letter-spacing: -0.05em;
 }
 
+
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   border-top: 1px solid var(--border);
   border-left: 1px solid var(--border);
 }
+
+.project-card {
+  min-width: 0;
+}
+
+.project-card h3 {
+  font-size: clamp(26px, 2.5vw, 46px);
+  line-height: 1.1;
+  overflow-wrap: break-word;
+}
+
 
 .project-card {
   min-height: 380px;
@@ -643,6 +655,20 @@ footer h2 {
     grid-template-columns: 1fr;
   }
 }
+
+
+@media (max-width: 1100px) {
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* New project pages: use the same editorial layout as NaviUni. */
 .portfolio-project-page { min-height: 100vh; background: var(--background); color: var(--foreground); }
