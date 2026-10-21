@@ -18,9 +18,9 @@ export default function ProjectPage() {
         <span>STIF · Sustainability and Technology Innovation Forum</span>
       </section>
       <section className="portfolio-project-pages">
-        <img src="/greenurbs/page-1.jpg" alt="STIF platform overview and sustainability mission" loading=eager />
-        <img src="/greenurbs/page-2.jpg" alt="STIF membership, ESG assessment, emissions insights and community tools" loading=lazy />
-        <img src="/greenurbs/page-3.jpg" alt="STIF sustainability solutions and user journey" loading=lazy />
+        <img src="/greenurbs/page-1.jpg" alt="STIF platform overview and sustainability mission" loading="eager" />
+        <img src="/greenurbs/page-2.jpg" alt="STIF membership, ESG assessment, emissions insights and community tools" loading="lazy" />
+        <img src="/greenurbs/page-3.jpg" alt="STIF sustainability solutions and user journey" loading="lazy" />
       </section>
       <footer className="portfolio-project-footer">
         <a href="/#work">← BACK TO PORTFOLIO</a>
