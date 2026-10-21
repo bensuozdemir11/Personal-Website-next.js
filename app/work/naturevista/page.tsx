@@ -20,7 +20,7 @@ export default function ProjectPage() {
       <section className="portfolio-project-pages">
         <img src="/naturevista/page-1.jpg" alt="NatureVista VR immersive panoramas of UK landscapes" loading="eager" />
         <img src="/naturevista/page-2.jpg" alt="Four UK locations and Unity panoramic VR environments" loading="lazy" />
-        <img src="/naturevista/page-3.jpg" alt="NatureVista technical implementation and Android VR deployment" loading=lazy />
+        <img src="/naturevista/page-3.jpg" alt="NatureVista technical implementation and Android VR deployment" loading="lazy" />
       </section>
       <footer className="portfolio-project-footer">
         <a href="/#work">← BACK TO PORTFOLIO</a>
