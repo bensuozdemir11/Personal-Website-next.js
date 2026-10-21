@@ -1,3 +1,4 @@
+
 export default function Home() {
   return (
     <main>
@@ -75,44 +76,62 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about" className="about-preview">
-        <span className="about-number">02 / THE PERSON BEHIND THE WORK</span>
+      <section id="about" className="about-editorial">
+        <div className="section-heading about-editorial-heading">
+          <span>02</span>
+          <h2>ABOUT ME</h2>
+        </div>
 
-        <div className="about-content">
-          <h2 className="about-headline">
-            Curious by nature.
-            <br />
-            <em>Creative at heart.</em>
-          </h2>
-
-          <div className="about-text">
-            <p>
-              I&apos;ve always been drawn to the space where creativity meets
-              technology. What excites me most about software development
-              isn&apos;t just writing code, but the possibility of turning an
-              idea into something people can actually experience.
-            </p>
-
-            <p>
-              With a background in Computer Science, my curiosity has taken me
-              from building mobile applications and designing digital platforms
-              to experimenting with virtual reality and exploring artificial
-              intelligence. I enjoy learning new technologies, challenging
-              myself creatively, and finding thoughtful solutions to complex
-              problems.
-            </p>
-
-            <p>
-              Outside of the technical side, I&apos;m someone who values good
-              design, fresh perspectives, and the process of bringing ideas to
-              life. Whether I&apos;m developing a product independently or
-              collaborating with a team, I care about creating work that feels
-              both purposeful and genuinely engaging.
-            </p>
+        <div className="about-editorial-layout">
+          <div className="about-editorial-photo">
+            <img
+              src="/about-bensu.jpg"
+              alt="Bensu Ozdemir standing in front of an illustrated wall"
+              loading="lazy"
+            />
+            <span>PORTRAIT / LONDON, UK</span>
           </div>
 
-          <div className="about-interests">
-            DEVELOPMENT · DESIGN · AI · CREATIVE TECHNOLOGY
+          <div className="about-editorial-story">
+            <span className="about-editorial-eyebrow">
+              THE PERSON BEHIND THE WORK
+            </span>
+
+            <h3>
+              Curious by nature.
+              <br />
+              <em>Creative at heart.</em>
+            </h3>
+
+            <div className="about-editorial-copy">
+              <p>
+                I&apos;ve always been drawn to the space where creativity meets
+                technology. What excites me most about software development
+                isn&apos;t just writing code, but the possibility of turning an
+                idea into something people can actually experience.
+              </p>
+
+              <p>
+                With a background in Computer Science, my curiosity has taken me
+                from building mobile applications and designing digital platforms
+                to experimenting with virtual reality and exploring artificial
+                intelligence. I enjoy learning new technologies, challenging
+                myself creatively, and finding thoughtful solutions to complex
+                problems.
+              </p>
+
+              <p>
+                Outside of the technical side, I&apos;m someone who values good
+                design, fresh perspectives, and the process of bringing ideas to
+                life. Whether I&apos;m developing a product independently or
+                collaborating with a team, I care about creating work that feels
+                both purposeful and genuinely engaging.
+              </p>
+            </div>
+
+            <div className="about-editorial-interests">
+              DEVELOPMENT · DESIGN · AI · CREATIVE TECHNOLOGY
+            </div>
           </div>
         </div>
       </section>
