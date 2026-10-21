@@ -26,10 +26,7 @@ export default function Home() {
           </div>
 
           <div className="hero-image">
-            <img
-              src="/bensu.jpeg"
-              alt="Bensu Ozdemir"
-            />
+            <img src="/bensu.jpeg" alt="Bensu Ozdemir" />
             <p>PORTRAIT / 2026</p>
           </div>
         </div>
@@ -43,9 +40,9 @@ export default function Home() {
 
       <section id="work" className="work-preview">
         <div className="section-heading">
-  <span>01</span>
-  <h2>PORTFOLIO</h2>
-</div>
+          <span>01</span>
+          <h2>PORTFOLIO</h2>
+        </div>
 
         <div className="project-grid">
           <article className="project-card">
@@ -62,12 +59,13 @@ export default function Home() {
             <a href="/work/greenurbs">VIEW PROJECT →</a>
           </article>
 
-         <article className="project-card">
-  <span>03 / DIGITAL PROJECT</span>
-  <h3>RIGHT AFTER</h3>
-  <p>Digital Product · Design · Development</p>
-  <a href="/work/right-after">VIEW PROJECT →</a>
-</article>
+          <article className="project-card">
+            <span>03 / DIGITAL PROJECT</span>
+            <h3>RIGHT AFTER</h3>
+            <p>Digital Product · Design · Development</p>
+            <a href="/work/right-after">VIEW PROJECT →</a>
+          </article>
+
           <article className="project-card">
             <span>04 / IMMERSIVE VR EXPERIENCE</span>
             <h3>NATUREVISTA VR</h3>
@@ -78,22 +76,44 @@ export default function Home() {
       </section>
 
       <section id="about" className="about-preview">
-        <span>02 / ABOUT</span>
+        <span className="about-number">02 / THE PERSON BEHIND THE WORK</span>
 
-        <div>
-          <h2>
-            COMPUTER SCIENCE,
+        <div className="about-content">
+          <h2 className="about-headline">
+            Curious by nature.
             <br />
-            BUT ALWAYS CURIOUS
-            <br />
-            ABOUT WHAT&apos;S NEXT.
+            <em>Creative at heart.</em>
           </h2>
 
-          <p>
-            I&apos;m a Computer Science graduate from London South Bank
-            University, interested in software engineering, digital products
-            and emerging technology.
-          </p>
+          <div className="about-text">
+            <p>
+              I&apos;ve always been drawn to the space where creativity meets
+              technology. What excites me most about software development
+              isn&apos;t just writing code, but the possibility of turning an
+              idea into something people can actually experience.
+            </p>
+
+            <p>
+              With a background in Computer Science, my curiosity has taken me
+              from building mobile applications and designing digital platforms
+              to experimenting with virtual reality and exploring artificial
+              intelligence. I enjoy learning new technologies, challenging
+              myself creatively, and finding thoughtful solutions to complex
+              problems.
+            </p>
+
+            <p>
+              Outside of the technical side, I&apos;m someone who values good
+              design, fresh perspectives, and the process of bringing ideas to
+              life. Whether I&apos;m developing a product independently or
+              collaborating with a team, I care about creating work that feels
+              both purposeful and genuinely engaging.
+            </p>
+          </div>
+
+          <div className="about-interests">
+            DEVELOPMENT · DESIGN · AI · CREATIVE TECHNOLOGY
+          </div>
         </div>
       </section>
 
